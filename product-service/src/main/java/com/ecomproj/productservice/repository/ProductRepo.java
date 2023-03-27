@@ -1,4 +1,8 @@
 package com.ecomproj.productservice.repository;
 
-public interface ProductRepo {
+import com.ecomproj.productservice.model.Product;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ProductRepo extends MongoRepository<Product, String> {
+
 }
