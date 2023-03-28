@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/product")
+
 @RequiredArgsConstructor
 public class ProductController {
 
@@ -26,6 +27,7 @@ public class ProductController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts(){
+
         return productService.getAllProducts();
     }
 
